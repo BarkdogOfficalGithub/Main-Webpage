@@ -1,0 +1,135 @@
+.vote li,
+nav li {
+    list-style: none;
+    font-weight: 300;
+    font-size: 1.3em
+}
+.center,
+.ip,
+.page-header,
+.vote li {
+    text-align: center
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+html {
+    font-family: Stationery, Calibri, Trebuchet, sans-serif
+}
+h5,
+h6 {
+    font-family: 'Alegreya Sans', sans-serif
+}
+body {
+    background: url(../images/bg.png) center no-repeat fixed #222;
+    background-size: cover
+}
+.wrapper {
+    background: rgba(0, 0, 0, .7)
+}
+.content {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .4);
+    color: #e6e6e6;
+    font-weight: 300
+}
+.vote li,
+nav a,
+nav li {
+    color: #fff
+}
+.header {
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+    margin: 0 auto;
+    padding: 50px
+}
+.ip {
+    background: rgba(0, 0, 0, .1)
+}
+nav li {
+    display: inline;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background: rgba(0, 0, 0, .3);
+}
+nav li:hover {
+    background: rgba(255, 255, 255, .3)
+}
+.ip {
+    padding: 1px;
+    border: 1px solid #222
+}
+nav {
+    background: rgba(255, 255, 255, .1)
+}
+.sidebar {
+    border-left: 3px solid rgba(230, 230, 230, .3);
+    padding: 5px;
+}
+.vote li {
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background: rgba(0, 0, 0, .3);
+}
+.vote a,
+ul a {
+    color: #ccc
+}
+.vote li:hover {
+    background: rgba(230, 230, 230, .3)
+}
+h5 {
+    font-size: 1.5em
+}
+h6 {
+    font-size: 1.3em
+}
+.bold {
+    font-weight: 600
+}
+.sub-head {
+    font-size: 1.2em
+}
+.info hr {
+    border: 1px solid rgba(230, 230, 230, .3);
+    width: 100%;
+    margin: 0
+}
+.bottom-nav a {
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    padding: 10px;
+    color: #999;
+    font-weight: 400;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+.bottom-nav a:hover {
+    background: rgba(255, 255, 255, .1);
+    color: #ccc
+}
+.info a:hover {
+    color: #1ca5e7
+}
+.footer-wrap {
+    background: rgba(0, 0, 0, .3)
+}
+.admins a:hover {
+    color: #999
+}
