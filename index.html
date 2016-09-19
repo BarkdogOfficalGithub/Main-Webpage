@@ -1,229 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang- "en">
 
 <head>
-    <title>UnraveledMC - Minecraft Server</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-    <meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
-    <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <meta name="author" content="UnraveledMC,UMC,aggelosQQ,Pinch">
-    <meta name="description" content="UnraveledMC is a brand new Free OP server with numerous of unique of plugins to ensure you are never bored of the same old!">
-    <meta name="keywords" content="aggelosQQ,ImmaFreedom,Pinch,UnraveledMC,UMC,Free OP, TF, TotalFreedom,Minecraft">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300' rel='stylesheet' type='text/css'>
-    <script src="https://use.fontawesome.com/cc71fd453a.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script src="http://totalfreedom.me/backup/24-May-2016%20(1st%20Version,%20BA)/assets/js/jquery.cookies.js"></script>
-    <script src="js/moment.js"></script>
-    <script src="js/function.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script>
-        // All Json content is loaded respectively into #(item)
-        var jsonUrl = "http://unraveledmc.com:28366/players";
-        var jsonContent = [
-              "developers",
-               "superadmins",
-               "telnetadmins",
-               "senioradmins"
-        ];
-
-        $(document).ready(function () {
-            loadJson(jsonUrl, jsonContent);
-        });
-    </script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>UnraveledMC - Free OP</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+      <script src="https://use.fontawesome.com/cb2592f0cc.js"></script>
+      <script src="js/main.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/component.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="content">   
-            <div class="header">
-                <nav class="transparent z-depth-0">
-                    <div class="nav-wrapper z-depth-0">
-                        <a href="#!" class="brand-logo"><img src="images/full-logo.png" alt="UnraveledMC" class="logo img-responsive" /></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="/forum"><i class="fa fa-users fa-fw"></i> Forum</a></li>
-                            <li><a href="http://unraveledmc.com:28366/list" target="_blank"><i class="fa fa-server fa-fw"></i> Online Players</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- Keep this commented as SSL stopped it from working - CreeperSeth -->
-                <!--
-                <div class="row">
-                    <div class="col s6">
-                        <ul class="nav">
-                            <li><a href="/forum">Forum</a></li>
-                            <li><a href="http://play.unraveledmc.com:28366/list">Online Players</a></li>
-                        </ul>
-                    </div>
-                </div>
--->
+      <div class="header">
+            <img src="images/full-logo.png" alt="UnraveledMC" title="UnraveledMC" class="responsive-img" />
+      </div>
+      <div class="navbar">
+            <div class="container">
+                  <nav class="transparent z-depth-0">
+                        <div class="nav-wrapper">
+                              <p class="left hide-on-med-and-down moto">Amazing Free-OP Experience!</p>
+                              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                              <ul class="right hide-on-med-and-down">
+                                    <li><a href="forum"><i class="fa fa-comments"></i> Forum</a></li>
+                                    <li><a href="vote"><i class="fa fa-star"></i> Vote</a></li>
+                                    <li><a href="http://github.com/unraveledmc-dev"><i class="fa fa-github"></i> Github</a></li>
+                              </ul>
+                              <ul class="side-nav" id="mobile-demo">
+                                    <li><a href="forum">Forum</a></li>
+                                    <li><a href="vote">Vote</a></li>
+                                    <li><a href="http://github.com/unraveledmc-dev">Github</a></li>
+                              </ul>
+                        </div>
+                  </nav>
             </div>
+      </div>
+      <div class="container">
+            <div class="page">
             <div class="row">
+                  <div class="col s12 m12 l8">
+                        <div class="announcements">
+                              <div class="announcements-header">
+                                    <h4 class="heading">Announcements</h4>
+                                    <p class="sub-heading">News about our server</p>
+                              </div>
+                              <div class="announcements-inner">
+                                    <h4 class="title">Welcome to UnraveledMC's New Website!</h4>
+                                    <p>Welcome to UnraveledMC's new elegant website! Here you will find anything you need to know about UnraveledMC and keep yourself aware of any upcoming events, announcements and features!
+                                          <!--<br /> <a href="#" class="btn btn-custom">Read More</a>-->
+                                    </p>
+                                    <p id="author" class="right-align">Posted by <a href="#">aggelosQQ</a>
+                              </div>
+                              <div class="announcements-inner">
+                                    <h4 class="title">Hello, I am a second title!</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque accumsan nisl quis pharetra. Duis nec tortor leo. Curabitur scelerisque felis nulla, sit amet congue turpis facilisis nec. Aenean accumsan erat
+                                          vitae bibendum malesuada. Sed pretium tellus vitae hendrerit tristique. Cras consectetur erat nunc, et lacinia orci efficitur ac. Praesent non purus sit amet nunc accumsan tempus. Nunc libero enim, efficitur vel
+                                          felis in, efficitur lacinia massa. Quisque nec faucibus risus, sodales lobortis ligula. Vestibulum egestas ligula eu volutpat aliquet. Quisque faucibus sem tellus, vitae ultrices nisl mattis lobortis. Phasellus
+                                          blandit consectetur lectus, in sagittis ex vestibulum eu. Vivamus molestie orci dolor, vel tempor felis egestas id. Aenean tempor rutrum nisl, a mattis diam sodales id.
+                                          <br /> <a href="#" class="btn btn-custom">Read More</a>
+                                    </p>
 
-                <!-- MAIN PAGE SIDE -->
-
-                <div class="col s9">
-                    <h4 class="page-header">Server IP:</h4>
-                    <div class="ip">
-                        <h5 class="flow-text">play.unraveledmc.com</h5>
-                    </div>
-                    <div class="info">
-                        <br><hr>
-                    <h2 class="page-header">Information</h2>
-                    <p class="administration">UnraveledMC is a free form sandbox server. All players are given creative mode plus OPs privileges provided they abide by our rules. Unlike most multiplayer servers, we like to allow maximum freedom here, whether it's using world edit commands, plugin essentials commands, mods, or logging in without a paid/premium account. Even though we are a freedom server, if you attempt to disrupt or grief the server, sanctions to include temporary or permanent banning are in play.</p>
-
-                    <p class="administration">All players are equal with ops and plugin privileges. However, regular players can be accorded admin status by positively contributing to the server. Positive contributions include producing or providing excellent world maps, making fantastic builds that get saved for use in our sandbox, assisting the server admins in dealing with griefers, and/or cleaning up their messes (e.g. spawn destruction), assisting new players, keeping the server free of lag and so forth. If you have specialized skills such as plugin coding, please discuss with the appropriate executive board member or owner. UnraveledMC does not solicit for donations and we do not have donation ranks - admin status must be earned. The list of admins are posted on this page and can be viewed in-game by using the command saconfig list.</p>
-
-                    <p class="administration" id="admininfo">Super admins are below senior admins & have various capabilities such as being able to OP themselves and overseeing the server in-game. If you wish to be a super admin, please fill out the application on our forum as listed above. We also have a specialized technical position known as Telnet admins that allow for off-server oversight- all senior admins have Telnet capability as well as designated super admins. Senior Admins are in-charge of selecting and supervising Super Admins.
-                        <p />
-
-
-
-                        <p class="administration">Admins should give OPs to all new members (anybody may OP another player) and instruct new players to read the rules and this website. They can also deop griefers (first choice for minor infractions) and temporarily ban griefers that cause major world damage and other serious rule violations. Admins may use an [Admin] nick title tag if they so wish provided they use their normal nick as listed above but must use their minecraft name when doing admin commands. If you wish to be a super admin or to know more detailed information about admin duties, please apply on the <a href="/forum">forums</a> and do not NOT publicly nag for it on the server. If you're not yet qualified to be an admin, you can become a crew member (admin assistant) and wear the crew tag if appointed by an admin - see the forums for more info</p>
-
-                        
-
-
-
-
-                        <h4 id="rules" class="rules page-header">Server Rules</h4>
-
-
-
-                        <h5 class="rules">No Griefing!</h5>
-
-                        <p class="rules">Do not grief the server. There are many way to do that, but the most common are to intentionally crash the server, lag the server, destroy or damage the spawn, destroy or damage other player's builds, erase warp points, PVP without agreement of other players, chat spamming, and so forth. Use your best judgement, and remember that other people are on here to have fun also.</p>
-
-
-
-                        <p class="rules">While we do strive to give our users Freedom, there are some limitations that we have been forced to put in place to prevent the worst of griefing. We are sorry for these measures, and if you need help building something legitimate but can't because of these limitations, please contact an admin. In addition to this webpage, please read our <a href="/forum">Banning Protocols</p></a></li>
-
-
-
-                            <p class="rules">Do note that actions such as &quot;nuking&quot; (removing and placing blocks rapidly via a client side hack) or freecam building/destroying will be automaticlly detected and you will be removed from the server. Additionally, some blocks, when used with worldedit, are prohibited and will result in automatic de-opping for evaulation by an admin. You should get permission from an admin before using &quot;high grief&quot; potential blocks like water and lava.</p>
-
-<hr>
-
-                            <h5 class="rules">No Impersonation</h5>
-
-                            <p class="rules">Do not pose as the server owners (aggelosQQ, AwesomePinch) and do not pose as an admin or one of the other regular players that use UnraveledMC. By posing, that means using a program such as MinecraftSP or otherwise changing your nick. Posing to change your title or to pose as somebody &quot;famous&quot; (like Notch) is okay provided you do not use it grief the server. You may not use nicks or tags that imply you have an official position on the server. This includes any nick or tag including the words admin, senior, owner, telnet, builder, architect, coder, dev, programmer, mod, security, or any nick or tag that the owner or a senior admin believes is an attempt to pose. In such cases, the offender will be de-nicked and warned. You may however use the tag [helper] if you're interested in becoming an admin and wish to assist admins. In all other cases, nicks and tags must not violate other rules such as respect for other players. For example, using the nick aggelosQQSucks will not be smiled upon. Last but not least, do not use spinning nicks, line-thru nicks, underline, black nicks (too hard to see), super long nicks, all-upper case, blank/hidden/garbage character nicks, or any form of nick that's designed to spam or annoy other players. If you login without premium (offline mode), a login name that is not valid by Mojang standards is disallowed (containing characters that are not numbers, letters, or an underscore to include spaces.)</p>
-
-<hr>
-
-                            <h5 class="rules">Respect Privacy</h5>
-
-                            <p class="rules">Respect the &quot;Freedom&quot; of other players. Do not be a pest or a nuisance to others, and respect their privacy. Do not &quot;help&quot; with builds if people do not want you to, and do not teleport someone without their permission. It is best to use <span class="command">/tpahere</span> to request that someone to teleport to you, rather than forcefully teleporting them. There are numerous way to be a nuisance and we don't detail all of them here but you'll learn them with time. Please note that privacy of communication is not yet offered on this server; all private messages / mail are logged plus all members have have access to socialspy. Use external services such as Skype or Twitter (Direct Message) if you require private communication with other members.</p>
-
-<hr>
-
-                            <h5 class="rules">Respect other players and admins</h5>
-
-                            <p class="rules">Do not engage in personal attacks on other players/admins and take all personal disputes off the server and forum. If you don't like a particular player, feel more than free to use the ignore command on them but personal wars on the server won't be tolerated regardless of who started it and temporary bans will result. Similarly, making threats to divulge personal information (DOX), deny Internet service (DDOS), personally harm, and other forms of behavior designed to bully, offend, intimidate or harass are not allowed by any means (server, forum, Skype, pastebin, etc.) This rule applies to admins to players as well, and admins that abuse their authority to engage in personal attacks will be sanctioned or removed. Respect between admins is essential. Personal disputes, insults, and criticisms between admins are to be handled off-server and in full privacy (Forum PM, Twitter DM, non-group Skype, email). Ex-Admins or suspended admins who continue on the server as regular OPs or a regular on the forum will be held to same standard of conduct between admins and failure to do so will result in temporary or permanent bans (server and forums). Excuses such as "I didn't start it" will not be accepted - anybody involved in a public 'admin war' is equally guilty</p>
-
-<hr>
-
-                            <h5 class="rules">Adhere to Authority</h5>
-
-                            <p class="rules">Do not override the actions of the server owners (aggelosQQ and AwesomePinch) or other admins. For example, if an admin de-ops or bans a player for griefing, you may not re-op or pardon them without permission. Super admins will follow the directions of senior admins with respect to any admin matter unless it violates server rules in which case a PM will be sent by the super admin to the owner.</p>
-
-<hr>
-
-                            <h5 class="rules">Consequences</h5>
-
-                            <p class="rules">Violation of these rules may result in a temporary de-op, temporary IP ban, or other disciplinary action. The length of a ban will be determined by the server owner based on the severity of the violation.</p>
-
-                            <p class="rules">If you feel you have been banned, muted, or had an administrative action applied to you unfairly, please create a report on our <a href="/forum">forum</a>.</p>
-<hr>
-                            <h5 class="rules">Perm Ban Release Rules</h5>
-
-                            <p class="rules">Except for those who were improperly placed on the perm ban list or those who requested perm ban for non-disciplinary reasons, those who get released from perm ban are subject to being placed back on the perm ban list far more readily than others and without warning; follow the rules diligently to avoid being added again. Also, those released from perm ban may not apply for admin (including re-instatement) for 60 days unless approved earlier by the Executive Admin, and former Telnets or Senior who were perm banned must apply for super admin.</p>
-
-
-                            <h4 class="help page-header">Server Help</h4>
-
-
-
-                            <h5 class="help">Saving and Loading Builds With WorldEdit</h5>
-
-                            <p class="help">Due to the immense and immediate world changing capabilities of the plugins this server runs, and the influence of frequent griefing, the server is frequently reset and restored to a default saved map. Except as arranged with the server owners (aggelosQQ and AwesomePinch), <span class="bold">all builds, experiments, and user inventories are temporary unless you save them using WorldEdit</span>.</p>
-
-                            <p class="help">To save your builds (i.e. create a WorldEdit schematic), first use the <span class="command">//wand</span> tool to select the bounds of your build (i.e. the opposite corners of your build, see the <a href="http://wiki.sk89q.com/wiki/WorldEdit/Quick_start">WorldEdit Quickstart Guide</a> for help.) Then, type <span class="command">//copy</span> to place your build on the clipboard, and type <span class="command">//schem save nameofbuild</span> to save your build (replacing <span class="command">nameofbuild</span> with a unique name of your own).</p>
-
-                            <p class="help">To load a schematic back into the world, do <span class="command">//schem load nameofbuild</span>, and then <span class="command">//paste</span>.</p>
-
-<hr>
-
-                            <h5 class="help">WorldEdit Cautions</h5>
-
-                            <p class="help">When using the WorldEdit plugin, avoid selecting a radius greater than 50 or an area greater than 25,000 blocks. Selecting overly large numbers will typically lag and crash the server (which of course is a violation of the rules above). If you make a World Edit that accidentally causes destruction to the spawn or other player builds, you should immediately do <span class="command">//undo</span>. While accidents can happen, be responsible, and if you're just learning WorldEdit, test the commands in remote part of the map far away from any other builds.</p>
-
-                            <hr>
-                    <blockquote>
-            The text was taken from <a href="http://totalfreedom.me">TotalFreedom</a>.</blockquote>
-                <hr><br>
-            </div>
-            <div class="bottom-nav">
-                    <a href="http://unraveledmc.com:28366/schematic/list">Schematics</a>
-                    <a href="http://unraveledmc.com:28366/players">Admin List</a>
-                    <a href="http://unraveledmc.com:28366/help">Full Command Document</a>
-            </div>
-            </div>
-
-                <!-- SIDEBAR -->
-
-                <div class="col s3">
-                    <div class="sidebar hide-on-med-and-down">
-                        <h4 class="page-header">Sidebar</h4><hr/>
-                          <div class="vote">
-                            <h5 class="page-header">Vote for UnraveledMC</h5>
-                            <ul class="vote-content">
-                            <p>Vote for the server to receive <b><font color="gold">5 Coins</font></b>!</p>
-                                <a href="http://minecraft-mp.com/server/120534/vote/" target="_blank"><li>Minecraft-MP</li></a>
-                                <a href="https://topg.org/Minecraft/in-432811" target="_blank"><li>TopG</li></a>
-                                <a href="http://www.planetminecraft.com/server/unraveledmc---free-op-3691683/vote/" target="_blank"><li>Planet Minecraft</li></a>
-                                
-                                 <p>For faster voting, <a href="/vote">click here</a></p>
-                            </ul>
-                            </div>
-                            <hr/>
-                         <div class="admins">
-                            <h5 class="page-header">Administrators</h5>
-                            <h6 class="bold sub-head">Executives</h6>
-                            <ul id="executives">
-                                <li><a href="https://twitter.com/maloukos1" target="_blank">aggelosQQ - Server Owner and Founder</a></li>
-                                <li><a href="#">AwesomePinch - Server Owner and Founder</a></li>
-                                <li><a href="#">Dusty01 - Executive Administrator</a></li>
-                                <li><a href="#">XeonXeoda - Executive Administrator</a></li>
-
-                            </ul>
-                            <h6 class="bold sub-head">Developers</h6>
-                            <ul>
-                                <li><a href="http://www.twitter.com/xCreeperSethx" target="_blank">CreeperSath - Lead Developer</a></li>
-                                <li><a href="#">OxLemonxO - Developer</a></li>
-                            </ul>
-                            <h6 class="bold sub-head">Senior Administrators</h6>
-                            <ul id="senioradmins"></ul>
-                             <h6 class="bold sub-head">Telnet Administrators</h6>
-                            <ul id="telnetadmins"></ul>
-                             <h6 class="bold sub-head">Super Administrators</h6>
-                            <ul id="superadmins"></ul>
-                            </div>
-                        <hr>
-                        <h5 class="center-align">Discord Status</h5>
-                        <iframe src="https://discordapp.com/widget?id=178413863409156096&theme=dark" width="250" height="500" allowtransparency="true" frameborder="0"></iframe>
+                                    <p id="author" class="right-align">Posted by <a href="#">YourFace</a>
+                              </div>
                         </div>
-                      <hr>
-
+                  </div>
+                  <div class="col s12 m12 l4 sidebar">
+                        <div class="inner server">
+                              <h2 class="title">Server <i class="fa fa-terminal pull-right"></i></h2>
+                              <div class="sidebar-content">
+                                    <p class="ip">play.unraveledmc.com</p>
+                                    <span id="unraveledmc"></span>
+                              </div>
                         </div>
-                    </div>
-                </div>
-             <footer class="page-footer transparent">
+                        <div class="inner vote">
+                              <h2 class="title">Vote <i class="fa fa-star pull-right"></i></h2>
+                              <div class="sidebar-content">
+                                    <p><strong>Vote for us to unlock amazing features!</strong></p>
+                                    <p>You can vote by either using this link (Recommended!): <a href="vote">http://unraveledmc.com/vote</a>
+                                          <p>Or</p>
+                                          <a href="#" class="btn btn-custom">Planet Minecraft</a><br/>
+                                          <a href="#" class="btn btn-custom">Minecraft-MP</a><br/>
+                                          <a href="#" class="btn btn-custom">TopG</a><br/>
+                              </div>
+                        </div>
+                        <div class="inner discord hide-on-med-and-down">
+                              <h2 class="title">Discord <i class="fa fa-comments pull-right"></i></h2>
+                              <div class="sidebar-content">
+                                    <iframe src="https://discordapp.com/widget?id=178413863409156096&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0"></iframe>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      </div>
+
+
+
+<footer class="page-footer transparent">
         <div class="footer-wrap">
+              <br/>
           <div class="container center">
-                <img src="/images/half-logo.png" class="center">
+                <img src="images/half-logo.png" class="center">
           </div>
           <div class="footer-copyright">
             <div class="container center">
@@ -232,7 +114,7 @@
           </div>
           </div>
         </footer>
-          </div>
-        </div>
-    </body>
+
+</body>
+
 </html>
