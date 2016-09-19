@@ -30,12 +30,12 @@ body {
     font-family: Sans-Serif, Arial, "Open Sans";
     padding: 1.2em 1.425em 1.1em 1.075em;
 }
-.announcements-header .heading {
+.heading {
     font-size: 14px;
     font-weight: 800;
 }
 .announcements-header .sub-heading {
-     font-size: 14px;
+     font-size: 13px;
     color: #ccc;
     margin-top: -25px;
     margin-left: -18px;
