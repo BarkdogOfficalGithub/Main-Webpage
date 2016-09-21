@@ -72,6 +72,7 @@ a.btn-custom:hover {
     text-align: center;
     font-size: 1.4em;
     color: #222;
+    word-wrap: break-word;
 }
 .inner span {
     text-align: center;
