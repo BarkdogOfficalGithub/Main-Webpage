@@ -1,0 +1,4 @@
+# disable directory browsing
+Options -Indexes
+
+ErrorDocument 404 "<img src='images/404.png' />"
